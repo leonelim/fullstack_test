@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: factory
+  datasource:
+    url: jdbc:postgresql://db:5432/factory
+    username: postgres
+    password: postgres
+logging:
+  level:
+    com.pistophone.factory: DEBUG

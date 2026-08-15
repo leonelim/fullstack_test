@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: ./factory_frontend/
+    ports: [
+      5173:5173
+    ]
+  backend:
+    build:
+      context: ./factory_backend/
+    ports: [
+      8080:8080
+    ]
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: factory
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
